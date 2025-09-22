@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoneyGPT - 48 Faceless Income Prompts</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --text: #ffffff;
+      --accent: #00ff88;
+      --accent-dark: #00cc77;
+      --glass: rgba(255, 255, 255, 0.05);
+      --font: 'Poppins', sans-serif;
+      --shadow: 0 0 25px rgba(0, 255, 136, 0.25);
+      --gradient: linear-gradient(135deg, #00ff88 0%, #00ccff 100%);
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    
+    header {
+      text-align: center;
+      padding: 8vh 2rem 6vh;
+      background: radial-gradient(circle at center, rgba(0,255,136,0.1) 0%, rgba(0,0,0,0) 70%);
+    }
+    
+    .hero-title {
+      font-size: clamp(2.5rem, 7vw, 4.5rem);
+      font-weight: 800;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 1.5rem;
+      line-height: 1.1;
+    }
+    
+    .hero-sub {
+      font-size: clamp(1.1rem, 3vw, 1.6rem);
+      color: #ccc;
+      max-width: 800px;
+      margin: 0 auto 2rem;
+    }
+    
+    .hero-badge {
+      display: inline-block;
+      background: rgba(0,255,136,0.1);
+      border: 1px solid var(--accent);
+      padding: 0.5rem 1.5rem;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 2rem;
+    }
+    
+    .section {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    
+    .glass-card {
+      background: var(--glass);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 2.5rem;
+      margin-bottom: 2rem;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    .glass-card h2 {
+      font-size: 2rem;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+    }
+    
+    .highlight-box {
+      background: rgba(0,255,136,0.1);
+      border-left: 4px solid var(--accent);
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin: 1.5rem 0;
+    }
+    
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .feature-item {
+      background: rgba(255,255,255,0.03);
+      border-radius: 12px;
+      padding: 1.5rem;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+    
+    .feature-item h3 {
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+    
+    .testimonial {
+      font-style: italic;
+      background-color: rgba(18,18,18,0.7);
+      border-left: 4px solid var(--accent);
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+    
+    .testimonial span {
+      display: block;
+      margin-top: 1rem;
+      font-weight: 600;
+      color: var(--accent);
+      font-style: normal;
+    }
+    
+    .cta-btn {
+      display: block;
+      width: 100%;
+      max-width: 500px;
+      margin: 3rem auto;
+      background: var(--gradient);
+      padding: 1.2rem;
+      color: #000;
+      font-size: 1.3rem;
+      font-weight: 700;
+      text-align: center;
+      border-radius: 12px;
+      text-decoration: none;
+    }
+    
+    .price-tag {
+      font-size: 3.5rem;
+      font-weight: 800;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin: 1rem 0;
+      line-height: 1;
+    }
+    
+    .price-original {
+      text-decoration: line-through;
+      color: #999;
+      font-size: 1.5rem;
+      margin-right: 1rem;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 3rem 2rem;
+      color: #888;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .animate {
+      animation: fadeIn 1s ease-out forwards;
+    }
+    
+    .delay-1 { animation-delay: 0.2s; }
+    .delay-2 { animation-delay: 0.4s; }
+    .delay-3 { animation-delay: 0.6s; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hero-badge animate">🚀 LIMITED TIME OFFER</div>
+    <h1 class="hero-title animate delay-1">MoneyGPT</h1>
+    <p class="hero-sub animate delay-2">48 Chatgpt Prompts That Print Income Like Magic</p>
+    <p class="hero-sub animate delay-2" style="font-size: 1.2rem;">Launch your faceless income machine using ChatGPT — without showing your face or wasting time.</p>
+  </header>
+
+  <section class="section">
+    <div class="glass-card animate delay-1">
+      <h2>🧠 What Is MoneyGPT?</h2>
+      <p>MoneyGPT is your secret vault of 48 ultra-powerful ChatGPT prompts — designed to help you unlock faceless income streams using freelancing, digital products, AI, affiliate marketing, and low-effort side hustles.</p>
+      
+      <div class="highlight-box">
+        <p><strong>These aren't your average prompts.</strong></p>
+        <p>They're engineered to feel illegal, work fast, and help anyone — even complete beginners — make money without a personal brand or followers.</p>
+        <p><strong>No fluff. Just results.</strong></p>
+      </div>
+    </div>
+
+    <div class="glass-card animate delay-2">
+      <h2>🚀 What You'll Get Inside</h2>
+      <p><strong>🔥 48 Vault-Level Prompts, including:</strong></p>
+      
+      <div class="feature-grid">
+        <div class="feature-item">
+          <h3>💼 Freelance Prompts</h3>
+          <p>"No Skills? Still Get Paid"</p>
+        </div>
+        <div class="feature-item">
+          <h3>📦 Digital Product Prompts</h3>
+          <p>"Create Once, Eat Forever"</p>
+        </div>
+        <div class="feature-item">
+          <h3>🔗 Affiliate Prompts</h3>
+          <p>"Other People’s Products, Your Profits"</p>
+        </div>
+        <div class="feature-item">
+          <h3>🤖 AI-Profit Prompts</h3>
+          <p>"The Smartest Dumb Hustles Ever"</p>
+        </div>
+        <div class="feature-item">
+          <h3>💰 Quick Money Prompts</h3>
+          <p>"Broke Today, ₹1K+ Tomorrow"</p>
+        </div>
+        <div class="feature-item">
+          <h3>⚡ Side Hustle Vault</h3>
+          <p>"Repeat. Scale. Exit."</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="glass-card animate delay-3">
+      <h2>💎 Why This Works</h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin: 1.5rem 0;">
+        <div style="flex: 1; min-width: 250px;">
+          <h3 style="color: #ff5555; margin-bottom: 0.5rem;">❌ No Need For:</h3>
+          <ul style="list-style: none;">
+            <li>❌ No followers</li>
+            <li>❌ No personal brand</li>
+            <li>❌ No tools (except ChatGPT & internet)</li>
+          </ul>
+        </div>
+        <div style="flex: 1; min-width: 250px;">
+          <h3 style="color: var(--accent); margin-bottom: 0.5rem;">✅ Just Do This:</h3>
+          <ul style="list-style: none;">
+            <li>✅ Copy → Paste → Execute</li>
+            <li>✅ ChatGPT does the thinking for you</li>
+            <li>✅ Each prompt triggers money-making</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="glass-card animate delay-1">
+      <h2>🧨 Testimonials</h2>
+      <div class="testimonial">
+        "I used just 3 prompts from this kit and landed a ₹1200 freelancing gig in 2 days!"
+        <span>– Rohit S., Student</span>
+      </div>
+      <div class="testimonial">
+        "I turned one reel idea into 2.3M views. This is gold."
+        <span>– Priya M., Content Creator</span>
+      </div>
+    </div>
+
+    <div class="glass-card animate delay-2" style="text-align: center;">
+      <h2>🔐 Price</h2>
+      <div class="price-tag">
+        <span class="price-original">₹999</span>₹99 Only
+      </div>
+      <p>One-time access • Instantly delivered • Earn back 10x fast</p>
+    </div>
+
+    <a href="https://rzp.io/rzp/girish_moneygpt" class="cta-btn animate delay-3">🚀 GET INSTANT ACCESS NOW</a>
+
+    <div class="glass-card animate delay-1">
+      <h2>⚠️ WARNING:</h2>
+      <p>These prompts are powerfully engineered. Once inside, you'll never be able to unsee how easy money-making can be with ChatGPT.</p>
+      <p><strong>Use them responsibly.</strong></p>
+    </div>
+  </section>
+
+  <footer class="animate delay-2">
+    © 2025 MoneyGPT. All rights reserved.
+    Terms & Conditions::
+All products are digital and for personal/business use only. No refunds after purchase. Redistribution is not allowed. By buying, you agree to these terms.
+  </footer>
+
+  <script>
+    // Simple countdown timer
+    function updateCountdown() {
+      const now = new Date();
+      const midnight = new Date();
+      midnight.setHours(23, 59, 59, 999);
+      const diff = midnight - now;
+      
+      const h = Math.floor(diff / (1000 * 60 * 60)).toString().padStart(2, '0');
+      const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, '0');
+      const s = Math.floor((diff % (1000 * 60)) / 1000).toString().padStart(2, '0');
+      
+      document.querySelectorAll('.timer').forEach(el => {
+        el.textContent = `${h}:${m}:${s}`;
+      });
+    }
+    
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+  </script>
+</body>
+</html>
